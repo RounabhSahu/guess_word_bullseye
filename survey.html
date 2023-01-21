@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/output.css">
+</head>
+
+<body class="h-screen m-0 p-0 w-full bg-gradient-to-bl from-violet-500/90 to-orange-700/80">
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div>
+
+                        <a href="#" class="flex items-center py-4 px-2">
+                            <img src="https://picsum.photos/40/40" alt="Logo"
+                                class="h-8 w-8 mr-2 rounded-md border-red-700 border-2 border-separate ">
+                            <span class="font-semibold text-gray-500 text-lg">Company Name</span>
+                        </a>
+                    </div>
+
+                    <div class="hidden md:flex items-center space-x-1">
+                        <div><a href="./index.html"
+                                class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300">Home</a>
+                        </div>
+                        <div class="group"><a href=""
+                                class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-1000 ">Services</a>
+                            <ul class="absolute bg-white hidden group-hover:block p-0 m-0 py-2">
+                                <li><a href="#"
+                                        class="my-1 py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300">Service
+                                        1</a></li>
+                                <li><a href="#"
+                                        class="my-1 py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300">Service
+                                        2</a></li>
+                                <li><a href="#"
+                                        class="my-1 py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300">Service
+                                        3</a></li>
+                            </ul>
+                        </div>
+                        <div><a href="./About.html"
+                                class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300">About</a>
+                        </div>
+                        <div><a href=""
+                                class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300">Contact
+                                Us</a></div>
+                        <div><a href="#"
+                                class="py-4 px-2 text-blue-500 border-b-4 border-blue-500 font-semibold">Form</a></div>
+                    </div>
+                </div>
+
+                <div class="hidden md:flex items-center space-x-3 ">
+                    <a href=""
+                        class="py-2 px-2 font-medium text-gray-500 rounded hover:bg-blue-500 hover:text-white transition duration-300">Log
+                        In</a>
+                    <a href=""
+                        class="py-2 px-2 font-medium text-white bg-blue-500 rounded hover:bg-blue-400 transition duration-300">Sign
+                        Up</a>
+                </div>
+
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <svg class=" w-6 h-6 text-gray-500 hover:text-blue-500 " x-show="!showMenu" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- mobile menu -->
+        <div class="hidden mobile-menu">
+            <ul>
+                <li><a href="./index.html"
+                        class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300">Home</a></li>
+                <li>
+                    <div class="group"><a href=""
+                            class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-1000">Services</a>
+                        <ul class="absolute bg-white hidden group-hover:block p-0 m-0 py-2">
+                            <li><a href="#"
+                                    class="my-1 py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300">Service
+                                    1</a></li>
+                            <li><a href="#"
+                                    class="my-1 py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300">Service
+                                    2</a></li>
+                            <li><a href="#"
+                                    class="my-1 py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300">Service
+                                    3</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="./About.html"
+                        class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300">About</a></li>
+                <li><a href="" class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300">Contact Us</a>
+                </li>
+                <li><a href="#" class="block text-sm px-2 py-4 text-white bg-blue-500 font-semibold">Form</a></li>
+            </ul>
+        </div>
+        <script>
+            const btn = document.querySelector("button.mobile-menu-button");
+            const menu = document.querySelector(".mobile-menu");
+
+            btn.addEventListener("click", () => {
+                menu.classList.toggle("hidden");
+            });
+        </script>
+    </nav>
+    <div class="mx-auto p-8 w-5/12 min-w-fit border-sky-600 border-solid border-2 my-4 rounded-md bg-gray-800 pt-2">
+        <span>
+            <h2 class="text-3xl text-center text-blue-300 pb-2">Survey Form</h2>
+        </span>
+        <hr>
+        <span>
+            <h2 class="text-blue-300 pl-2 py-2">This form enquires about your preferences for the upcoming party</h2>
+        </span>
+        <hr>
+        <form class="flex-col justify-around space-y-5 py-4 pl-2">
+            <div class="bg-blue-200/5 p-1 py-2  mx-2 rounded-sm">
+                <label for="name" id="label-name" class="text-green-200/90 mx-2">
+                    Name
+                </label>
+                <input type="text" id="name" placeholder="Enter your name"
+                    class="pl-2 text-lime-800 rounded border-solid border-2 border-blue-300 " />
+            </div>
+            <div class="bg-blue-200/5 p-1 py-2  mx-2 rounded-sm">
+                <label for="email" id="label-email" class="text-green-200/90 mx-2">
+                    Email
+                </label>
+                <input type="email" id="email" placeholder="Enter your email"
+                    class="ml-1 pl-2 text-lime-800 rounded border-solid border-2 border-blue-300 " />
+            </div>
+            <div class="bg-blue-200/5 p-1 py-2  mx-2 rounded-sm">
+                <label for="age" id="label-age" class="text-green-200/90 mx-2">
+                    Age
+                </label>
+                <input type="number" id="age" placeholder="Enter your age"
+                    class="ml-3 pl-2 text-lime-800 rounded border-solid border-2 border-blue-300 " />
+            </div>
+
+            <div class="bg-blue-200/5 p-1 py-2  mx-2 rounded-sm">
+                <label for="role" id="label-role" class="text-green-200/90 mx-2">
+                    Which option best describes you?
+                </label>
+                <select name="role" id="role" class="pl-2 rounded border-solid border-2 border-blue-300 ">
+                    <option value="student">Student</option>
+                    <option value="intern">Intern</option>
+                    <option value="professional">Professional</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="bg-blue-200/5 p-1 py-2  mx-2 rounded-sm">
+                <label id="label-attendance" class="text-green-200/90 mx-2">
+                    Will you attend the party?
+                </label>
+                <label for="attend-1" id="label-attend-1" class="mx-2 px-2 text-white bg-green-700 rounded-xl">
+                    <input type="radio" id="attend-1" name="attend"> Yes</input>
+                </label>
+                <label for="attend-2" id="label-attend-2" class="mx-2 pl-2 pr-3 text-white bg-red-700 rounded-xl">
+                    <input type="radio" id="attend-2" name="attend"> No</input>
+                </label>
+            </div>
+
+            <div class="bg-blue-200/5 p-1 py-2  mx-2 rounded-sm flex flex-col">
+                <label class="text-green-200/90 mx-2">What did you like about the program?</label>
+                <br>
+                <label for="inp-1" class="ml-4 text-amber-300 px-2 py-1">
+                    <input type="checkbox" name="inp"> Training</input>
+                </label>
+                <br>
+                <label for="inp-2" class="ml-4 text-amber-300 px-2 py-1">
+                    <input type="checkbox" name="inp"> The Learning Sessions from Industry Experts</input>
+                </label>
+                <br>
+                <label for="inp-3" class="ml-4 text-amber-300 px-2 py-1">
+                    <input type="checkbox" name="inp"> Community Meetups</input>
+                </label>
+                <br>
+                <label for="inp-4" class="ml-4 text-amber-300 px-2 py-1">
+                    <input type="checkbox" name="inp"> Brown Bag Sessions</input>
+                </label>
+                <br>
+                <label for="inp-5" class="ml-4 text-amber-300 px-2 py-1">
+                    <input type="checkbox" name="inp"> Switching to Hybrid Mode</input>
+                </label>
+                <br>
+                <label for="inp-6" class="ml-4 text-amber-300 px-2 py-1">
+                    <input type="checkbox" name="inp"> Food, Office etc.</input>
+                </label>
+            </div>
+
+            <div class="bg-blue-200/5 p-1 py-2  mx-2 rounded-sm flex flex-col">
+                <label for="comment" class="text-green-200/90 m-2">
+                    Any comments or suggestions
+                </label>
+                <textarea name="comment" id="comment" placeholder="Enter your comment here"
+                    class="m-2 rounded-md pl-2 text-lime-800">
+                </textarea>
+            </div>
+            <div class=" p-1 py-2  mx-2 rounded-sm flex flex-row justify-center space-around space-x-2">
+                <button type="reset" value="reset" id="reset"
+                    class="px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">
+                    Reset
+                </button>
+                <button type="submit" value="submit" id="submit"
+                    class="px-4 py-1text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">
+                    Submit
+                </button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
